@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\Keil\Labware\Lab11_UART\Lab11.uvproj
+Project File Date:  02/11/2014
+
+<h2>Output:</h2>
+Build target 'Lab11'
+linking...
+Program Size: Code=3712 RO-data=716 RW-data=44 ZI-data=1764  
+".\Lab11.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\Keil\\Labware\\Lab11_UART\\Lab11.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+</pre>
+</body>
+</html>
+ with parameter of type "char *restrict"
+                        sprintf(String, "**** ");
+UART.c(181): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                sprintf(String, "0.00%d cm", n);
+UART.c(183): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                sprintf(String, "0.0%d cm", n);
+UART.c(185): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                sprintf(String, "0.%d cm", n);
+UART.c(187): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                sprintf(String, "%d.%03d cm", n/1000, n%1000);
+UART.c(190): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                sprintf(String, "*.*** cm");
+UART.c: 7 warnings, 0 errors
+compiling main.c...
+linking...
+Program Size: Code=3712 RO-data=716 RW-data=44 ZI-data=1764  
+".\Lab11.axf" - 0 Error(s), 7 Warning(s).
