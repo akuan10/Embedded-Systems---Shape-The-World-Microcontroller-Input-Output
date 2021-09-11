@@ -177,12 +177,8 @@ void UART_OutUDec(unsigned long n){
 void UART_ConvertDistance(unsigned long n){
 // as part of Lab 11 implement this function
 	if(n <= 9999){
-		if(n < 10)
-		sprintf(String, "0.00%d cm", n);
-		else if(n >= 10 && n < 100)
-		sprintf(String, "0.0%d cm", n);
-		else if(n >= 100 && n < 1000)
-		sprintf(String, "0.%d cm", n);
+		if(n < 1000)
+		sprintf(String, "0.%03d cm", n);
 		else if(n >= 1000 && n <= 9999)
 		sprintf(String, "%d.%03d cm", n/1000, n%1000);
 	}
